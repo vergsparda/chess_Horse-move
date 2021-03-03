@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  margin: 0;
+  width: 240px;
+  flex-wrap: wrap;
+}
+
+.white {
+  background: #f4cd8d;
+}
+.dark {
+  background: #745853;
+}
+a {
+  display: block;
+  height: 100%;
+}
+.dark:focus, .white:focus {
+  background: #ff0000;
+}
+.el1:focus ~ :nth-child(11), .el1:focus ~ :nth-child(18){
+  background: #0000ff;
+}
+
+.el2:focus ~ :nth-child(12), .el2:focus ~ :nth-child(17), .el2:focus ~ :nth-child(19){
+  background: #0000ff;
+}
+
+.el64:focus :nth-child(47) {
+  background: #0000ff;
+}
+
+.white, .dark {
+width: 30px; /* Ширина слоя */
+height: 30px;/* Высота слоя */
+}
